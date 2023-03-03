@@ -18,15 +18,16 @@
 |                          |           |          |
 | (Pending)                | Cynthia   |          |
 
-## Jarvis
+## Jarvis (0/11)
 
 - Understand different Natural languages (English, French)
 - Similar in function to ChatGPT but of course not inclusive of all functions
 - Save queries in a list
 - Save list to a JSON file on exit
+- (optional) Play the response using Audio
 - Constraint: Conversation
 
-## Snake
+## Snake (2/11)
 
 - GUI
 - Within borders of the screen
@@ -38,7 +39,7 @@
 - (optional) Local co-op
 - Constraint: Pygame
 
-## News API
+## News API (9/11)
 
 - Download news from Yahoo API, save to DB
 - Display news on website
