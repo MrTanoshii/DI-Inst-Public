@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+<title>Test document</title>
+{% endblock %}
+
+{% block content %}<h1>This worked!</h1>
+<h2>Hello {% if gender == "F" %} Mrs {% elif gender == "M" %} Mr {% endif %}{{ user }}</h2>
+<h2>Hello {{ user2 }}</h2>
+<h3>This is uppercase {{ user.upper }}</h3>
+<h3>This is piped/filtered uppercase {{ user|upper }}</h3>
+<h3>This is piped/filtered uppercase then lowercase {{ user|upper|lower|upper|lower|upper|lower|upper|lower }}</h3>
+<h3>This lucky number is: {{ lucky_number.Jacob }}</h3>
+<!-- Python: context["lucky_number"]["Jacob"]  -->
+<h3>This lucky number of Tushil is: {{ lucky_number.Tushil.9 }}</h3>
+
+<div>
+    {{ bunch_of_text|truncatewords:20 }}
+</div>
+
+<div>
+    {{ order_date|date:"Y-m-d | D M Y" }}
+</div>
+
+<div>
+    The 3 lucky numbers after the first one of Tushil are: {{ lucky_number.Tushil|slice:"1:4" }}
+</div>
+
+<span>The total amount is : {{ item_total|default:"hundred" }}</span>
+
+<ul>
+    {% for x in subjects %}
+    <li>{{ x.title | title }} by {{ x.author}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
