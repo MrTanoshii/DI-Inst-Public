@@ -3,20 +3,20 @@
 | Team Name                | Teammate  | Ideas    |
 | ------------------------ | --------- | -------- |
 | KTSM                     | Khavind   | Jarvis   |
-|                          | Tushil    |          |
-|                          | Shabneez  |          |
 |                          | Martine   |          |
+|                          | Shabneez  |          |
+|                          | Tushil    |          |
 |                          |           |          |
-| Fruit Ninja              | Jacob     | Snake    |
+| Fruit Ninja              | Cynthia   | Snake    |
+|                          | Jacob     |          |
+|                          | Soobhug   |          |
 |                          | Yushi     |          |
-|                          | Soubhug   |          |
 |                          |           |          |
-| Link The Megatron Clowns | Sebastien | News API |
-|                          | Ra'ees    |          |
-|                          | Alexis    |          |
+| Link The Megatron Clowns | Alexis    | News API |
 |                          | David     |          |
+|                          | Ra'ees    |          |
+|                          | Sebastien |          |
 |                          |           |          |
-| (Pending)                | Cynthia   |          |
 
 ## Jarvis (0/11)
 
