@@ -1,0 +1,24 @@
+{% extends "posts/base.html" %}
+
+<!-- Change the value of the doc title -->
+
+{% block page_title %}
+Sign Up
+{% endblock page_title %}
+
+<!-- Add a form to the content block -->
+
+{% block content %}
+{{ block.super }}
+{{ success_msg }}
+
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <!-- <table>
+        {{ form.as_table }}
+    </table> -->
+    {{ form.as_p }}
+    <button type="submit">Sign Up</button>
+</form>
+{% endblock content %}

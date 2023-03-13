@@ -1,0 +1,24 @@
+{% extends 'posts/base.html' %}
+
+{% block page_title %}
+{{ category.name }}
+{% endblock page_title %}
+
+{% block content %}
+{{ block.super }}
+<!-- <h1>{{ category.name }}</h1>
+<p>{{ category.description }}</p>
+<h2>Posts</h2>
+{% for post in category.posts.all %}
+<h3>{{ post.title }}</h3>
+<p>{{ post.content }}</p>
+{% endfor %} -->
+
+<form method="PoSt">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+    <input {% if btnFormHidden %} type="hidden" {% else %} type="submit" {% endif %} class="btn btn-primary"
+        value="Submit">
+</form>
+{% endblock content %}

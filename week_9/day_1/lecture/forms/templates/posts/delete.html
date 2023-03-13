@@ -1,0 +1,17 @@
+{% extends 'posts/base.html' %}
+
+{% block page_title %}
+Deleting person
+{% endblock page_title %}
+
+{% block content %}
+{{ block.super }}
+
+<form method="PoSt">
+    {% csrf_token %}
+
+    <p>Are you sure you want to delete "{{ object }}"?</p>
+    <input {% if btnFormHidden %} type="hidden" {% else %} type="submit" {% endif %} class="btn btn-primary"
+        value="Confirm">
+</form>
+{% endblock content %}

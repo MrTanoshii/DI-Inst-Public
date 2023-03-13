@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block page_title %}Base Template{% endblock page_title %}</title>
+
+    <style>
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        /* div {
+            display: block;
+            min-height: 500px;
+        } */
+    </style>
+</head>
+
+<body>
+    {% block content %}
+    Hello world
+    {% endblock content %}
+
+    <div class="red" id="flag">
+        R
+    </div>
+    <div class="blue">
+        B
+    </div>
+    <div class="yellow">
+        Y
+    </div>
+    <div class="green">
+        G
+    </div>
+</body>
+
+</html>
