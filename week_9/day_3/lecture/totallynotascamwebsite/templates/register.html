@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ page_title|default:"Homepage" }}
+{% endblock title %}
+
+{% block content %}
+<h3>SignUp Page!</h3>
+{% endblock content %}
+
+{% block form %}
+{% if failed_message %}
+<div class="mt-2">
+    <p class="alert alert-danger">{{failed_message}}</p>
+</div>
+{% endif %}
+{{ block.super }}
+{% endblock form %}

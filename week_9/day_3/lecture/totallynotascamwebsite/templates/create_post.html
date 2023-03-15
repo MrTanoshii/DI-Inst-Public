@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ page_title|default:"Homepage" }}
+{% endblock title %}
+
+{% block content %}
+{{ block.super }}
+<h2> Add a new post</h2>
+{% endblock content %}
+
+{% block form %}
+<form method="post">
+    {% csrf_token %}
+    {{ formset.management_form }} {# Necessary!! #}
+    <table>
+        {% for form in formset %} {# Several forms in the same template #}
+        <tr>
+            <td>
+                <ul class="list-inline">{{ form.as_table }}</ul>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <input type="submit" value="Update All" class="btn btn-primary">
+</form>
+{% endblock form %}
