@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Search by phone number{% endblock %}
+
+{% block content %}
+<h1>Good morning {{ name }}</h1>
+
+<ul>
+    <li>{{ target_person.name }}</li>
+    <li>{{ target_person.email }}</li>
+    <li>{{ target_person.phone_number }}</li>
+    <li>{{ target_person.address }}</li>
+</ul>
+{% endblock %}

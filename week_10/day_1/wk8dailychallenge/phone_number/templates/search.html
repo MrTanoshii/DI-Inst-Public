@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Search{% endblock %}
+
+{% block content %}
+<h1>Search</h1>
+<form action="./name" method="GET">
+    <label for="name">Name:</label>
+    <input name="name" placeholder="Please enter your name">
+    <input type="submit" value="Search by name">
+</form>
+
+<form action="./phone_number" method="GET">
+    <label for="phone_number">Phone number:</label>
+    <input name="phone_number" placeholder="Please enter your phone number">
+    <input type="submit" value="Search by phone number">
+</form>
+{% endblock %}
