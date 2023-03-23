@@ -11,16 +11,16 @@
 </head>
 
 <body>
-    {% block content %}{% endblock content %}
+    {% block content %}<h2>Hello {{ user.username }}</h2>{% endblock content %}
+    {% block form %}
     <form method="POST">
         {% csrf_token %}
         <table>
             {{ form.as_table }}
         </table>
-        {% block form %}
-        {% endblock form %}
         <input type="submit" value="SUBMIT" class="btn btn-primary">
     </form>
+    {% endblock form %}
 </body>
 
 </html>

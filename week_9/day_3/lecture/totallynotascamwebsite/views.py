@@ -65,13 +65,17 @@ from .models import Post
 def posts(request, id):
     context = {
         "page_title": "Posts",
+        "user": User.objects.get(pk=id),
     }
 
     # get the user depending on the id passed in the url
     user = User.objects.get(pk=id)
+    print(f"All posts: {Post.objects.all()}")
     # get the userprofile linked to the user
     # userprofile = UserProfile.objects.get(user=user)
 
+    print(f"Queryset results: {Post.objects.filter(author=user)}")
+    print(f"Length of queryset: {len(Post.objects.filter(author=user))}")
     if request.POST:
         # We use queryset in order to retrieve the posts of a specific user
         formset = PostFormSet(request.POST, queryset=Post.objects.filter(author=user))

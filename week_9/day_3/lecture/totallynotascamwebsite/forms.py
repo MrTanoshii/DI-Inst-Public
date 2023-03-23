@@ -29,4 +29,4 @@ class PostForm(forms.ModelForm):
 
 
 # the new formset
-PostFormSet = modelformset_factory(Post, form=PostForm)
+PostFormSet = modelformset_factory(Post, form=PostForm, extra=0)
