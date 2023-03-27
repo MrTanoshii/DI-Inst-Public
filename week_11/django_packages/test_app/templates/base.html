@@ -1,0 +1,20 @@
+{% load django_bootstrap5 %}
+{% bootstrap_css %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block page_title %}Untitled Page{% endblock %}</title>
+</head>
+
+<body>
+    <h1>Packages: <span class="badge bg-info">django_bootstrap5</span></h1>
+    {% block page_content %}
+    {% endblock %}
+</body>
+
+</html>

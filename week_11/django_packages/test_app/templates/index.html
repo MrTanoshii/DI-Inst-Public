@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load django_bootstrap5 %}
+{% bootstrap_javascript %}
+
+{% block page_title %}Homepage{% endblock %}
+
+{% block page_content %}
+<form action="index" method="post" class="form">
+    {% csrf_token %}
+
+    {% bootstrap_form form %}
+
+    {% bootstrap_button button_type="submit" content="OK" %}
+    {% bootstrap_button button_type="reset" button_class="btn-warning" content="Cancel" %}
+</form>
+
+<p>
+    Page rendered at: {% now "Y-m-d H:i:s" %}
+</p>
+{% endblock %}
