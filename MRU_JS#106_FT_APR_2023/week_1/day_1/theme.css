@@ -1,0 +1,13 @@
+h1,
+p {
+  /* color: rgba(255, 0, 0, 255); */
+  color: #b68f52;
+}
+
+h1#top {
+  color: green;
+}
+
+.blue {
+  border: 1px solid blue;
+}
