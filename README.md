@@ -8,6 +8,8 @@
     - [Day 2 - List, iterating and formatting data ](/MRU_PY%2395_FT_JAN_2023/week_4/day_2/)
     - [Day 3 - Dictionaries](/MRU_PY%2395_FT_JAN_2023/week_4/day_3/)
     - [Day 4 - Functions](/MRU_PY%2395_FT_JAN_2023/week_4/day_4/)
+- [Mauritius JavaScript 96 - Part Time - January 2023](/MRU_JS%2396_PT_JAN_2023/)
+- [Mauritius Javascript 106 - Full Time - April 2023](/MRU_JS%23106_FT_APR_2023/)
 
 ## How to create a new django project
 
