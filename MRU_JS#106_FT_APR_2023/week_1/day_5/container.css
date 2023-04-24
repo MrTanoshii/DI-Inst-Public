@@ -1,0 +1,40 @@
+.box {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:nth-child(1),
+.box:nth-child(6),
+.box:nth-child(8) {
+  background-color: orangered;
+}
+
+.box:nth-child(2),
+.box:nth-child(4),
+.box:nth-child(9) {
+  background-color: blueviolet;
+}
+
+.box:nth-child(3),
+.box:nth-child(5),
+.box:nth-child(7) {
+  background-color: greenyellow;
+}
+
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.main-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
