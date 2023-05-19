@@ -42,4 +42,25 @@ const addPokemon = async (pokemonName) => {
 let btnEl = document.querySelector("#capture-btn");
 let pokemonEl = document.querySelector("input[name='pokemon-name']");
 
+// Method 1: Implement the function away from the event listener
 btnEl.addEventListener("click", () => addPokemon(pokemonEl?.value));
+
+// Method 2: Implement the function directly in the event listener
+// btnEl.addEventListener("click", async () => {
+//   let pokemonName = pokemonEl?.value;
+//   const errorMsgEl = document.querySelector("#error-msg");
+//   errorMsgEl.innerText = "";
+
+//   try {
+//     let result = await fetchPokemon(pokemonName);
+
+//     // Add pokemon to the list
+//     let uListEl = document.querySelector("#pokeballs");
+//     let listItemEl = document.createElement("li");
+//     listItemEl.innerText = result.name + " - " + result.height;
+//     uListEl.appendChild(listItemEl);
+//   } catch {
+//     errorMsgEl.innerText = `Pokemon '${pokemonName}' failed.`;
+//     console.error(`Pokemon '${pokemonName}' failed.`);
+//   }
+// });
