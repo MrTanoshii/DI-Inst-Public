@@ -1,0 +1,40 @@
+* {
+  font-family: "Radio Canada", sans-serif;
+}
+
+body {
+  background-color: #333333;
+  color: #dedede;
+}
+
+.task-item {
+  color: #444444;
+}
+
+.task-item__completed {
+  background-color: lightgreen;
+}
+
+.task-item__uncompleted {
+  background-color: lightcoral;
+}
+
+.task-item__missed {
+  background-color: crimson;
+}
+
+.col {
+  margin-top: 1rem;
+}
+
+.task-item {
+  margin-top: 1rem;
+}
+
+.task-item label {
+  color: #000000;
+}
+
+#chart {
+  margin: 0.5rem;
+}
