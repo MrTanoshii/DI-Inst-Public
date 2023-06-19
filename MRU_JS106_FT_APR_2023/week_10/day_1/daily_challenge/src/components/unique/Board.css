@@ -1,0 +1,13 @@
+div.col {
+  cursor: pointer;
+  transition: ease-out 1s;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  padding: 0px;
+}
+
+div.col:hover {
+  background-color: lightgray;
+  transition: ease-out 1s;
+}
